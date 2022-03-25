@@ -1,0 +1,56 @@
+[
+  {
+    nama: 'Sofa',
+    id: 'sofa-01',
+    harga: 900000,
+    warna: 'coklat',
+    material: 'mahogany',
+    deskripsi: 'Sofa duduk yang nyaman',
+    quantity: 6
+  },
+  {
+    nama: 'Kursi',
+    id: 'kur-01',
+    harga: 300000,
+    warna: 'Putih',
+    material: 'pine',
+    deskripsi: 'Kursi sofa antik',
+    quantity: 7
+  },
+  {
+    nama: 'Kursi tinggi',
+    id: 'kur-02',
+    harga: 250000,
+    warna: 'Merah',
+    material: 'pine',
+    deskripsi: 'Kursi tinggi yang ringan',
+    quantity: 8
+  },
+  {
+    nama: 'Kursi Dapur',
+    id: 'kur-03',
+    harga: 150000,
+    warna: 'Biru',
+    material: 'pine',
+    deskripsi: 'Kursi untuk ruang makan',
+    quantity: 12
+  },
+  {
+    nama: 'Lemari Buku',
+    id: 'lmr-01',
+    harga: 400000,
+    warna: 'Coklat',
+    material: 'plywood',
+    deskripsi: 'Lemari buku 2 pintu',
+    quantity: 6
+  },
+  {
+    nama: 'Lemari Pakaian',
+    id: 'lmr-02',
+    harga: 800000,
+    warna: 'Putih',
+    material: 'mahogany',
+    deskripsi: 'Lemari pakaian 2 pintu',
+    quantity: 5
+  }
+]

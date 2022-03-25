@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Data Furnitur</title>
+	<style>
+	html,body{font:14px arial,verdana,san-serif;}
+	.container{
+		display:table;
+		
+		border-collapse:collapse;
+		line-height:25px;
+	}
+	.row{  
+		display:table-row;
+	}
+	.col{ 
+		display:table-cell;
+		border:1px solid #CCC;
+		width:300px;
+	}
+   </style>
+</head>
+<body>
+  <h1>Data Furnitur</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col">
+		  <button id="addproduk" onclick="idbApp.addproduk()">Tambah Produk</button></br>
+		  <h2>Cari Produk</h2>
+		  <p>Nama: <input type="text" id="nama" placeholder="Nama"> 
+		  <button id="byNama" onclick="idbApp.displayBynama()">Cari</button></p>
+		  <p>Harga: <input type="text" id="hargaLower" placeholder="Min"> - 
+			 <input type="text" id="hargaUpper" placeholder="Max">
+		  <button id="byHarga" onclick="idbApp.getByharga()">Cari</button></p>
+		  <p>Deskripsi: <input type="text" id="desc" placeholder="Description">
+		  <button id="byDesc" onclick="idbApp.getByDesc()">Cari</button></p>
+		  <div id="results"></div>
+		</div>
+        <div class="col">
+		  <h2>Pesanan</h2>
+		  <button id="tambahpesanan" onclick="idbApp.tambahpesanan()">Tambah Pesanan</button></br></br>
+		  <button id="tampilkanpesanan" onclick="idbApp.tampilkanpesanan()">Tampilkan Pesanan</button></br></br>
+		  <div id="pesanan"></div>
+		  <button id="fulfill" onclick="idbApp.fulfillpesanan()">Pesanan Lengkap</button></br></br>
+		  <div id="receipt"></div>
+		</div>
+    </div>
+  </div>
+
+<script src="js/idb.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
