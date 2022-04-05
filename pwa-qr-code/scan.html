@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA QR Code</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <link rel="stylesheet" type="text/css" href="styles/materialize.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- Add to home screen untuk Safari iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <meta name="theme-color" content="#2F3BA2">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <link rel="manifest" href="manifest.json"/>
+</head>
+<body>
+    <header class="header">
+      <a href="index.html">Generate</a>
+	  <h1 style="text-align: center;" class="header__title">Scan QR Code</h1>
+    </header>
+    <main class="main">
+      <div style="text-align: center;" class="container">		
+		<div class="select">
+			<label for="videoSource">Video source: </label>
+			<select id="videoSource"></select>
+		</div>		  
+		  <div>
+			<video muted autoplay id="video" style="width:100%;"></video>
+			<div class="row">
+				<div class="col s12">
+                <button class="waves-effect waves-light btn" id="go" type="button" name="button">
+					SCAN QR Code
+                </button>
+				</div>
+            </div>
+			<canvas id="pcCanvas" style="display:none; float:bottom;height:100%;"></canvas>
+			<canvas id="mobileCanvas" style="display:none; float:bottom;height:100%;"></canvas>
+		  </div>
+        
+		<strong><div id="dbr" class="card"></div></strong>
+      </div>
+    </main>
+	
+	<script src="scripts/jquery-3.3.1.js"></script>
+	<script src="scripts/video.js"></script>
+	<script src="scripts/zxing.min.js"></script>
+	<script src="scripts/materialize.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

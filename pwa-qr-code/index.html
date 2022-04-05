@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA QR Code</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <link rel="stylesheet" type="text/css" href="styles/materialize.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- Add to home screen untuk Safari iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <meta name="theme-color" content="#2F3BA2">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <link rel="manifest" href="manifest.json"/>
+</head>
+<body>
+    <header class="header">
+      <a href="scan.html">Scan</a>
+	  <h1 style="text-align: center;" class="header__title">Generate QR Code</h1>
+    </header>
+    <main class="main">
+      <div style="text-align: center;" class="container">
+        <div class="card">
+          <div id="qrcode"></div>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+			  <div class="input-field col s12">
+                <input placeholder="Data QR Code" id="qrCodeMessage" type="text" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="grid-example col s12">
+                <button class="waves-effect waves-light btn-large" id="buttonGenerate" type="button" name="button">
+                  Generate QR Code
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+	<script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/jquery.qrcode.min.js"></script>
+    <script src="scripts/app.js"></script>
+	<script src="scripts/materialize.min.js"></script>
+</body>
+</html>
